@@ -8,7 +8,7 @@
     <title>Social Profile | icodethis.com</title>
 </head>
 <body>
-    <div class="flex justify-center items-center min-h-[70vh] bg-slate-100 px-4 ">
+    <div class="flex justify-center items-center min-h-[70vh] bg-slate-100 px-4 [&_*]:transition-all [&_*]:duration-200 [&_*]:ease-linear">
         <div class="card bg-white w-full rounded-md shadow-md p-8 xs:px-14 max-w-xl">
             <div class="flex flex-col xs:flex-row [&>*]:flex-1">
                 <div class="flex flex-col items-center justify-center xs:items-start">
@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class="pt-4 flex justify-center items-start [@media(min-width:31.25rem)]:justify-end">
-                    <button class="py-1 px-8 rounded-full border shadow-inner text-sm text-slate-500 [@media(min-width:31.25rem)]:bg-slate-900 [@media(min-width:31.25rem)]:text-slate-50 hover:scale-105 duration-300 ease-linear">Follow</button>
+                    <button id="btn" class="py-2 px-8 rounded-full border shadow-inner text-sm text-slate-500 [@media(min-width:31.25rem)]:bg-slate-900 [@media(min-width:31.25rem)]:text-slate-100 hover:bg-slate-200 hover:text-slate-800 font-semibold duration-300 ease-linear">Follow</button>
                 </div>
             </div>
             <div class="hidden text-slate-800 text-sm xs:block">
@@ -33,5 +33,6 @@
             </div>
         </div>
     </div>
+    <script src="./scripts.js"></script>
 </body>
 </html>

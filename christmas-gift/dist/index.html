@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Merry Christmas | icodethis.com</title>
+</head>
+<body>
+
+    <div id="gift-modal" class="absolute top-0 left-0 w-full bg-slate-700/60 backdrop-blur-sm bottom-0 z-30 px-4 hidden">
+        <div class="flex justify-center items-center h-full">
+            <div class="max-w-xl shadow-lg rounded-lg bg-white p-8">
+                <div class="flex justify-center items-center flex-col">
+                    <div class="gift text-4xl animate-bounce text-center text-amber-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 13v8h7v-8H4m8 0v8h7v-8h-7m8 0v9H3v-9H2V7h3.04L5 6.5A3.5 3.5 0 0 1 8.5 3c1.27 0 2.39.68 3 1.7c.61-1.02 1.73-1.7 3-1.7A3.5 3.5 0 0 1 18 6.5l-.04.5H21v6h-1M3 8v4h8V8H3m17 4V8h-8v4h8m-3.05-5l.05-.5A2.5 2.5 0 0 0 14.5 4A2.5 2.5 0 0 0 12 6.5V7h4.95M11 7v-.5A2.5 2.5 0 0 0 8.5 4A2.5 2.5 0 0 0 6 6.5l.05.5H11Z"/></svg>
+                    </div>
+                    <h1 class="text-2xl font-bold font-martian mb-2 text-slate-800">Hurray!!!</h1>
+                    <span class="text-center text-slate-500">Congratulations! You made it to this unique day. Your gift is here.</span>
+                </div>
+                <div class="button-group flex justify-center items-center py-4">
+                    <button id="accept-gift-btn" class="shadow py-2 px-5 rounded-md bg-slate-800 hover:bg-amber-600 text-white font-semibold">
+                        <svg class="inline mr-2 text-xl font-bold" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="currentColor" d="m24.844 4.063l-.969.28l-7.688 2.188l-.937.282l.188.687l-7.22-2.094l-.968-.281l-.281.969l-2.813 9.562c-.34 1.184-.547 2.598-.156 3.969c.316 1.11 1.11 2.176 2.344 2.813l-.907 3.28l-2.875-.843L2 26.813l7.688 2.218l.562-1.937l-2.875-.844l.906-3.25a4.623 4.623 0 0 0 3.469-1.156c1.063-.953 1.66-2.223 2-3.407l2.469-8.25l2.031 7.22v.03c.34 1.184.938 2.454 2 3.407c.867.777 2.078 1.246 3.469 1.125l.906 3.281l-2.875.844l.563 1.937L30 25.813l-.563-1.938l-2.875.844l-.937-3.282c1.234-.636 2.027-1.703 2.344-2.812c.39-1.371.215-2.785-.125-3.969l-2.719-9.625zM23.5 6.53L24.75 11H18.5l-.781-2.813zM8.625 7.625l5.75 1.625l-.813 2.75h-6.25zM19.063 13h6.25l.625 2.219c.269.93.363 2.035.125 2.875c-.239.84-.692 1.43-1.907 1.781c-1.215.352-1.914.082-2.562-.5c-.649-.582-1.168-1.57-1.438-2.5zM6.719 14h6.25l-1.125 3.875h-.031c-.27.93-.758 1.918-1.407 2.5c-.648.582-1.347.852-2.562.5c-1.215-.352-1.668-.941-1.907-1.781c-.238-.84-.144-1.946.125-2.875z"/></svg>Many thanks</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center items-center min-h-[70vh] bg-slate-50 px-4 [&_*]:transition-all [&_*]:duration-200 [&_*]:ease-linear">
+        <div class="relative card max-w-sm rounded-b-md rounded-tl-md rounded-3xl shadow-xl bg-white text-center py-12 px-8 [@media(min-width:420px)]:px-16 my-16">
+            <div class="close absolute right-0 p-2 m-2 rounded-full hover:shadow-inner top-0 hover:bg-slate-100">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"/></svg>
+            </div>
+            <div class="tree">
+                <svg class="mx-auto text-4xl" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M10 21v-3H3l5-5H5l5-5H7l5-5l5 5h-3l5 5h-3l5 5h-7v3h-4Z"/></svg>
+                <h1 class="py-4 tracking-widest font-semibold text-lg font-martian">Merry Christmas!</h1>
+            </div>
+            
+            <div>
+                <span class="text-sm text-slate-500 py-2 w-2/4 font-semibold">You completed all your december tasks so we decided to get you a gift:</span>
+                <h1 class="py-4 text-amber-400 text-sm">50% off of your Yearly Premium Plan</h1>
+            </div>
+            <button id="get-gift" class="py-2 my-4 px-8 bg-slate-800 text-slate-50 text-sm font-semibold uppercase rounded-md hover:bg-amber-600">Get your Gift</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

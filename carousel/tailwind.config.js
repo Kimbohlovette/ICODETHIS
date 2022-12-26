@@ -14,8 +14,8 @@ module.exports = {
             },
         },
         animation: {
-            slipRight:"slipRight 1s ease-in",
-            slipLeft: "slipLeft 1s ease-in"
+            slipRight:"slipRight 1s ease",
+            slipLeft: "slipLeft 1s ease"
         },
     },
   },

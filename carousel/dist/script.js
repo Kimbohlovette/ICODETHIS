@@ -9,12 +9,12 @@ var slides = new Array(...slidersEl.children)
 prevBtnEl.addEventListener('click', ()=>{
 
     prev()
-    renderSlides()
+    renderSlides("animate-slipRight")
 })
 
 nextBtnEl.addEventListener('click', ()=>{
     next()
-    renderSlides()
+    renderSlides("animate-slipLeft")
 })
 
 
@@ -38,9 +38,18 @@ function prev(){
     slides[0] = tempN
 }
 
-function renderSlides(){
+function renderSlides(animation){
     slidersEl.childNodes = null
     for( const slide of slides){
+        if(slide.classList.contains("animate-slipRight")){
+            slide.classList.replace("animate-slipRight",animation)
+        }
+        if(slide.classList.contains("animate-slipLeft")){
+            slide.classList.replace("animate-slipLeft", animation)
+        }
+        slide.classList.add(animation)
+        slide.classList.add('[animation-fill-mode:forwards]')
         slidersEl.appendChild(slide)
     }
+
 }

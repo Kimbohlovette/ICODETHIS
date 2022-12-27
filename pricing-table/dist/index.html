@@ -8,6 +8,55 @@
     <title>Pricing Table</title>
 </head>
 <body>
-    
+    <div class="flex items-center justify-center px-4 bg-slate-50 min-h-screen [&_*]:transition-all [&_*]:duration-200 [&_*]:ease-linear bg-gradient-to-br from-orange-100 to-cyan-50">
+        <div class="cards-container max-w-6xl">
+            <div class="cards grid sm:grid-cols-2 md:grid-cols-3 [&>*]:w-auto gap-4 sm:gap-6 border-8 border-white rounded-xl p-8 bg-gradient-to-tr from-pink-50 to-cyan-50">
+                <div class="card flex flex-col gap-2">
+                    <div class="text-slate-700 font-serif font-bold text-xl py-2">Free</div>
+                    <div>
+                        <h1 class="text-4xl text-slate-800 font-bold pt-2 leading-none">
+                            <svg class="text-2xl inline font-bold" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M15.999 8.5h2c0-2.837-2.755-4.131-5-4.429V2h-2v2.071c-2.245.298-5 1.592-5 4.429c0 2.706 2.666 4.113 5 4.43v4.97c-1.448-.251-3-1.024-3-2.4h-2c0 2.589 2.425 4.119 5 4.436V22h2v-2.07c2.245-.298 5-1.593 5-4.43s-2.755-4.131-5-4.429V6.1c1.33.239 3 .941 3 2.4zm-8 0c0-1.459 1.67-2.161 3-2.4v4.799c-1.371-.253-3-1.002-3-2.399zm8 7c0 1.459-1.67 2.161-3 2.4v-4.8c1.33.239 3 .941 3 2.4z"/></svg>0</h1>
+                        <span class="block text-sm font-light text-slate-600">
+                            For your whole team.
+                        </span>
+                    </div>
+                    <span class="block py-2 text-slate-700 text-sm w-3/4">
+                        For individuals or teams looking to organize anything.
+                    </span>
+                    <button class="p-2 rounded-md text-slate-700 bg-pink-300/60 backrop-blur-sm text-sm w-fit focus:ring-2 ring-offset-2 hover:bg-slate-800 hover:text-slate-100">Get started</button>
+                </div>
+                <div class="card flex flex-col gap-2">
+                    <div class="text-slate-700 font-serif font-bold text-xl py-2">Standard</div>
+                    <div>
+                        <h1 class="text-4xl text-slate-800 font-bold pt-2 leading-none">
+                            <svg class="text-2xl inline font-bold" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M15.999 8.5h2c0-2.837-2.755-4.131-5-4.429V2h-2v2.071c-2.245.298-5 1.592-5 4.429c0 2.706 2.666 4.113 5 4.43v4.97c-1.448-.251-3-1.024-3-2.4h-2c0 2.589 2.425 4.119 5 4.436V22h2v-2.07c2.245-.298 5-1.593 5-4.43s-2.755-4.131-5-4.429V6.1c1.33.239 3 .941 3 2.4zm-8 0c0-1.459 1.67-2.161 3-2.4v4.799c-1.371-.253-3-1.002-3-2.399zm8 7c0 1.459-1.67 2.161-3 2.4v-4.8c1.33.239 3 .941 3 2.4z"/></svg>6</h1>
+                        <span class="block text-sm font-light text-slate-600">
+                            Per user per month.
+                        </span>
+                    </div>
+                    <span class="block py-2 text-slate-700 text-sm w-3/4">
+                        For teams that need to manage more work.
+                    </span>
+                    <button class="p-2 rounded-md text-slate-700 bg-cyan-300/60 backrop-blur-sm text-sm w-fit focus:ring-2 ring-offset-2 hover:bg-slate-800 hover:text-slate-100">Upgrade Now</button>
+                </div>
+                <div class="card flex flex-col gap-2">
+                    <div class="text-slate-700 font-serif font-bold text-xl py-2">Premium</div>
+                    <div>
+                        <h1 class="text-4xl text-slate-800 font-bold pt-2 leading-none">
+                            <svg class="text-2xl inline font-bold" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M15.999 8.5h2c0-2.837-2.755-4.131-5-4.429V2h-2v2.071c-2.245.298-5 1.592-5 4.429c0 2.706 2.666 4.113 5 4.43v4.97c-1.448-.251-3-1.024-3-2.4h-2c0 2.589 2.425 4.119 5 4.436V22h2v-2.07c2.245-.298 5-1.593 5-4.43s-2.755-4.131-5-4.429V6.1c1.33.239 3 .941 3 2.4zm-8 0c0-1.459 1.67-2.161 3-2.4v4.799c-1.371-.253-3-1.002-3-2.399zm8 7c0 1.459-1.67 2.161-3 2.4v-4.8c1.33.239 3 .941 3 2.4z"/></svg>12</h1>
+                        <span class="block text-sm font-light text-slate-600">
+                            Per user per month.
+                        </span>
+                    </div>
+                    <span class="block py-2 text-slate-700 text-sm w-3/4">
+                        Best for teams that need to track multiple projects.
+                    </span>
+                    <button class="p-2 rounded-md text-slate-700 bg-orange-300/60 backrop-blur-sm text-sm w-fit focus:ring-2 ring-offset-2 hover:bg-slate-800 hover:text-slate-100">Try for free</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
